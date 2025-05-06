@@ -1,5 +1,4 @@
 name: Build Gateway bootloaders
-run-name: Build Gateway bootloaders
 
 on:
   push:
@@ -9,6 +8,8 @@ on:
 jobs:
 
   trigger:
+
+    name: "Trigger bootloader build in ${{ github.repository_owner }}/workflows"
 
     runs-on: ubuntu-latest
 
